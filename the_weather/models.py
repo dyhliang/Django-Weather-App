@@ -9,9 +9,9 @@ class City(models.Model):
         """ Shows actual city name on dashboard """
         return self.name
 
-    #class Meta:
-    #    """Shows the plural of city as cities instead"""
-    #    plural_name = 'cities'
+    class Meta:
+        """Shows the plural of city as cities instead"""
+        verbose_name_plural = 'cities'
 
 # In order to make these changes in the database, run
 # python manage.py makemigrations
