@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>OpenWeather</title>
-    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.css" />
 </head>
 
 <body>
@@ -36,6 +36,9 @@
                                 </button>
                             </div>
                         </div>
+                        {% if message %}
+                        <div class="notication {{ message_class }}">{{ message }}</div>
+                        {% endif %}
                     </form>
                 </div>
             </div>
@@ -56,25 +59,31 @@
                             <div class="media-content">
                                 <div class="content">
                                     <table>
-                                        <span class="title">
-                                            <h2>{{ weather.city }}</h2>
-                                        </span>
-                                        <span class="subtitle">
-                                            <h3>{{ weather.temperature }}° F
+                                        <td>
+                                            <span class="title">
+                                                {{ weather.city }}
                                                 <br>
-                                                <h5>{{ weather.description }}</h5>
-                                            </h3>
-                                        </span>
-                                        <span class="hi-low">
-                                            <h5>Hi: {{ weather.hi }}°/Lo: {{ weather.lo }}°</h5>
-                                        </span>
-                                        <span class="desc-hum">
-                                            <h5>
-                                                Humidity: {{ weather.humidity }}%
-                                            </h5>
-                                        </span>
+                                            </span>
+                                            <span class="subtitle">
+                                                <h3><b>{{ weather.temperature }}° F</b></h3>
+                                                <small>Hi: {{ weather.hi }}°/Lo: {{ weather.lo }}°</small>
+                                            </span>
+                                            <span class="desc">
+                                                <br>
+                                                <em>{{ weather.description }}</em>
+                                            </span>
+                                            <span class="hum">
+                                                <br>
+                                                <em>Humidity: {{ weather.humidity }}%</em>
+                                            </span>
+                                        </td>
                                     </table>
                                 </div>
+                            </div>
+                            <div class="media-right">
+                                <a href="{% url 'delete_city' weather.city %}">
+                                    <button class="delete"></button>
+                                </a>
                             </div>
                         </article>
                     </div>
