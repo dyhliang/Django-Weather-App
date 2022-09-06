@@ -27,6 +27,9 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+STATICFILE_DIRS = [
+    "/django_weather_app/the_weather/static"
+]
 
 # Application definition
 
