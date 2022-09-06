@@ -19,6 +19,6 @@ from django.urls import path, include
 # Map url to locations so they can be handled in a certain way
 urlpatterns = [
     path("admin/", admin.site.urls),
-    path('', include('weather.urls')),
+    path('', include('the_weather.urls')),
     # empty string so we don't need to use an endpoint for the entry point to app
 ]
