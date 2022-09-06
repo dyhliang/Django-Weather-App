@@ -1,6 +1,7 @@
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,7 @@
     <title>OpenWeather</title>
     <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}" />
 </head>
+
 <body>
     <section class="hero is-primary">
         <div class="hero-body">
@@ -53,13 +55,25 @@
                             </div>
                             <div class="media-content">
                                 <div class="content">
-                                    <p>
-                                        <span class="title">{{ weather.city }}</span>
-                                        <br>
-                                        <span class="subtitle"><b>{{ weather.temperature }}° F</b></span>
-                                        <br> {{ weather.description }}
-                                        <br> <p>Humidity: {{ weather.humidity }}% </p>
-                                    </p>
+                                    <table>
+                                        <span class="title">
+                                            <h2>{{ weather.city }}</h2>
+                                        </span>
+                                        <span class="subtitle">
+                                            <h3>{{ weather.temperature }}° F
+                                                <br>
+                                                <h5>{{ weather.description }}</h5>
+                                            </h3>
+                                        </span>
+                                        <span class="hi-low">
+                                            <h5>Hi: {{ weather.hi }}°/Lo: {{ weather.lo }}°</h5>
+                                        </span>
+                                        <span class="desc-hum">
+                                            <h5>
+                                                Humidity: {{ weather.humidity }}%
+                                            </h5>
+                                        </span>
+                                    </table>
                                 </div>
                             </div>
                         </article>
@@ -72,4 +86,5 @@
     <footer class="footer">
     </footer>
 </body>
+
 </html>

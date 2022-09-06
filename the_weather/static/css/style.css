@@ -1,7 +1,13 @@
-h1 {
-    color: blue;
+body {
+    font-family: 'Optima';
+    color: #FFD700;
+    background-color: #001F3F;
+    font-size: calc(22px);
+    text-align: center;
+    margin: auto;
+    padding: 5%;
 }
 
-body {
-    background-color: #fefbd8;
+h1 {
+    color: #FFD700;
 }
