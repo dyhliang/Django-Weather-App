@@ -2733,10 +2733,6 @@ a.box:active {
   text-align: left;
 }
 
-.content table tr:hover {
-  background-color: whitesmoke;
-}
-
 .content table thead td,
 .content table thead th {
   border-width: 0 0 2px;
@@ -2832,12 +2828,6 @@ a.box:active {
 .input:-ms-input-placeholder,
 .textarea:-ms-input-placeholder {
   color: rgba(54, 54, 54, 0.3);
-}
-
-.input:hover, .input.is-hovered,
-.textarea:hover,
-.textarea.is-hovered {
-  border-color: #b5b5b5;
 }
 
 .input:focus, .input.is-focused, .input:active, .input.is-active,
@@ -3210,10 +3200,6 @@ a.box:active {
 
 .select select:-ms-input-placeholder {
   color: rgba(54, 54, 54, 0.3);
-}
-
-.select select:hover, .select select.is-hovered {
-  border-color: #b5b5b5;
 }
 
 .select select:focus, .select select.is-focused, .select select:active, .select select.is-active {
