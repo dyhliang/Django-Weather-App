@@ -1,1 +1,1 @@
-web: npm run start
+web: gunicorn django_weather_app.wsgi
