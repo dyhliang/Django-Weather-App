@@ -1,6 +1,6 @@
 # WeatherToday
 
-A Django weather app that displays temperature, conditions, and humidity for any city in the world inputted by the user. A user may add and delete as many cities as they wish. The city name must be valid, and duplicate cities cannot added. 
+A Django weather app that displays temperature, conditions, and humidity for any city in the world inputted by the user. A user may add and delete as many cities as they wish, given that the city name is valid, and duplicate cities cannot added. 
 
 ### Note:
 This app is not fully deployed due to certain issues that I am currently troubleshooting.
@@ -11,5 +11,5 @@ This app is not fully deployed due to certain issues that I am currently trouble
 <img width="1197" alt="Screen Shot 2022-09-14 at 12 07 30 AM" src="https://user-images.githubusercontent.com/102781030/190057896-65c912d0-c9e6-4f73-8a0f-d7b47be46795.png">
 <img width="1209" alt="Screen Shot 2022-09-14 at 12 07 06 AM" src="https://user-images.githubusercontent.com/102781030/190057901-0bfd28ef-ab7e-4b84-8491-2f88a303c11a.png">
 
-### Sourcse
+### Source
 Credit to https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.css as inspiration for the current CSS style, which is slightly modified from the original version.
