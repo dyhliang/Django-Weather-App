@@ -1,1 +1,4 @@
+distributed @ file:///opt/concourse/worker/volumes/live/061a375f-fbe4-45b4-4d80-0ba96d3ee7cb/volume/distributed_1617384077473/work
+dj-database-url==1.0.0
+Django==4.1
 whitenoise==6.2.0
